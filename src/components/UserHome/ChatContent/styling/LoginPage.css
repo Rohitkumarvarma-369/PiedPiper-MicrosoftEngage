@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Judson&display=swap");
+
+.login-maindiv {
+  background: #4b878bff;
+  /*background-image: url("../assets/cool-background.svg");*/
+  background-image: url("../assets/pic1.svg");
+  min-height: 100vh;
+  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.Login-cards {
+  height: 100%;
+  width: 100%;
+  margin-top: 5vh;
+}
+.login-title {
+  text-align: center;
+}
+.login-card-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("https://i.pinimg.com/736x/ea/39/cc/ea39cc82a7cc40a124eacaea5eaadf8b.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: ease;
+}
+.login-card-bg h1 {
+  font-family: "Archivo Black", sans-serif;
+}
+.login-card-bg p {
+  font-family: "Judson", serif;
+  text-align: center;
+}
+.login-card-bg li {
+  text-align: left;
+  font-weight: 600;
+}
+.login-row-1 {
+  margin-bottom: 17vh;
+}
+
+.login-row-card-bg {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("https://i.pinimg.com/736x/ea/39/cc/ea39cc82a7cc40a124eacaea5eaadf8b.jpg");
+  background-size: cover;
+  background-blend-mode: ease;
+}
+#login-form {
+  text-align: center;
+}
+
+#login-button {
+  margin-top: 1vh;
+}

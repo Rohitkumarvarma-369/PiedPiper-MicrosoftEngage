@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+.chat-header-brand-name {
+  font-family: "Yomogi", cursive;
+  margin-left: 22px;
+  font-size: 35px;
+}
+
+#id-copy-text {
+  font-family: "Yomogi", cursive;
+}
+.header-text-mover {
+  margin-left: 5vw;
+}
+.id-text-mover {
+  margin-right: 5vw;
+}
+.middle-text {
+  text-align: center;
+}

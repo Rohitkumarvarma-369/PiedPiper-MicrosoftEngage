@@ -1,0 +1,29 @@
+.OnetoManyCard {
+  min-width: "18rem" !important;
+  margin: 7rem;
+  text-align: center;
+}
+.OnetoManyLandingPage {
+  min-height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #454d66,
+    #309975,
+    #58b368,
+    #dad873,
+    #efeeb4
+  );
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

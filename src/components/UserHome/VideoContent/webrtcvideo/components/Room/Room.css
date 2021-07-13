@@ -1,0 +1,89 @@
+html {
+  min-height: 100%;
+}
+.room-container {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.chat-column {
+  background: rgb(44, 35, 203);
+  background: linear-gradient(
+    90deg,
+    rgba(43, 35, 203, 0.637) 7%,
+    rgba(171, 35, 78, 0.692) 81%
+  );
+  min-height: 100vh;
+}
+.ButtonsBox {
+  position: absolute;
+  left: 10vw;
+  bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-overcut {
+  width: 275px;
+  height: 205px;
+  border: 3px solid red;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(214, 200, 200, 0.507);
+}
+#video-overcut-remote {
+  width: 275px;
+  height: 220px;
+  border: 3px solid red;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(214, 200, 200, 0.507);
+}
+
+.videocontainer {
+  background-image: url("../../assets/pexels-cátia-matos-1072179.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.videoandoptions-container {
+  max-width: 70vw;
+  max-height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px black solid;
+}
+.myvideo-container {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 20vh;
+  background-color: grey;
+}
+.remote-video-container {
+  height: 70vh;
+
+  background-color: antiquewhite;
+}
+.options-container {
+  bottom: 0;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.466);
+}
+.chat-container {
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 30vw;
+  background-color: lightblue;
+}
+.UserName {
+  position: absolute;
+  z-index: 1;
+}
+.remote-video-container {
+  display: flex;
+}
+.remotevideo {
+  width: 300px !important;
+}

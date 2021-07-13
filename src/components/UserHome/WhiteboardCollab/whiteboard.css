@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+.App {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+}
+.border-light {
+  border: 2px solid white;
+  background-color: white;
+  margin: 10px;
+}
+.border-dark {
+  border: 2px solid black;
+  background-color: white;
+
+  margin: 10px;
+}
+.setting-buttons {
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+.headingmain {
+  color: tomato;
+  font-weight: 400;
+}
+.mainbg-dark {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  background-color: rgba(0, 0, 0, 0.863);
+}
+.mainbg-light {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  background-color: white;
+}

@@ -1,0 +1,33 @@
+.mainScreen {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/354/386/non_2x/foggy-pine-forest-background-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mainContainer {
+  margin-left: 0;
+  width: 60vw;
+  padding: 0;
+}
+#subVideoContainer {
+  height: 80vh;
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+}
+#pubVideoContainer {
+  height: 80vh;
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+}
+.controlsContainer {
+  position: absolute !important;
+  bottom: 3vh !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  height: 4rem !important;
+  z-index: 999 !important;
+  width: 100vw !important;
+  max-width: 58vw;
+}

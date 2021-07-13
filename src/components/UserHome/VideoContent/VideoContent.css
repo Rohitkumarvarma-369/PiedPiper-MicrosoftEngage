@@ -1,0 +1,40 @@
+/* .VideoContent-main-bg {
+  background-color: coral;
+} */
+
+.VideoContent-container {
+  margin-top: 4vh;
+  align-items: center;
+  align-content: center;
+}
+.VideoContent-cols {
+  border: 1px solid;
+  border-radius: 5px;
+  align-content: center;
+  padding: 5px;
+  text-align: center;
+  background-color: #eae9e0;
+  background-image: url("https://wallpaperaccess.com/full/2906429.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.VideoContent-cols h1 {
+  margin: 5px auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #121212;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.VideoContent-card {
+  margin: auto;
+}
+.VideoConnect-cardtext {
+  font: size 3px !important;
+}
+.webrtc-header {
+  text-align: center;
+}

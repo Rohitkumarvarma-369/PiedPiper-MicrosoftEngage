@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+
+#chat-preview-text {
+  font-family: "Yomogi", cursive;
+  font-weight: 800;
+  color: rgb(194, 82, 82) !important;
+}
+#chat-preview-header {
+  font-family: "Yomogi", cursive;
+  font-weight: 600;
+  font-size: 12px !important;
+}
+#chat-preview-modal {
+  font-family: "Yomogi", cursive;
+  font-weight: 600;
+  font-size: 12px !important;
+  color: rgb(82, 108, 194);
+}
+.make-this-centered {
+  text-align: center;
+}

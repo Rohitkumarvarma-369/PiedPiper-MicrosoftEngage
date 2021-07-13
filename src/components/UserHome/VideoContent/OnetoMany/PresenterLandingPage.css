@@ -1,0 +1,21 @@
+.PresenterLandingPage-mainbg {
+  height: 100vh;
+  background: #2f7336; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #aa3a38,
+    #2f7336
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #aa3a38,
+    #2f7336
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.PresenterLandingPage-maincard {
+  margin-top: 20vh;
+  width: 18rem;
+  text-align: center;
+  background-color: #3e8214 !important;
+  color: #fff !important;
+}

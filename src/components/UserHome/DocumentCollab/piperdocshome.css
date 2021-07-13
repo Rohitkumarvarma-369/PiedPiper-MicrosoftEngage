@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+.customCard {
+  background: rgba(0, 0, 255, 0.432) !important;
+}
+.document-card-bg {
+  font-family: "Yomogi", cursive;
+  font-size: large;
+  font-weight: bold;
+  min-height: 80vh;
+  background: linear-gradient(
+    -45deg,
+    #0a1045,
+    #00c2d1,
+    #f9e800b2,
+    #f6af65,
+    #ed33b9
+  );
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

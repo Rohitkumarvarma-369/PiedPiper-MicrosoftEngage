@@ -1,0 +1,12 @@
+#send-button {
+  margin-left: 1rem !important;
+}
+#emoji-button {
+  margin-left: 1rem !important;
+}
+.send-form-bg {
+  background-color: tomato;
+  padding: 0.3rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}

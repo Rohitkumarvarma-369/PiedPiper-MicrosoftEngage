@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #26c6da;
+  --primary-color-hover: rgba(13, 163, 182, 0.08);
+  --primary-color-active: rgba(13, 163, 182, 0.16);
+  --secondary-color-active: #644d06;
+  --lift-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
+  --color-background: 255, 255, 255;
+  --color-dark-background: 25, 33, 36;
+  --spacing-unit-xmicro: 0.25rem;
+  --spacing-unit-micro: 0.3535534rem;
+  --spacing-unit-xxxxlarge: 5.6568556041rem;
+  --home-hero-font-size-a: 3rem;
+  --home-hero-font-size-b: 2.7rem;
+  --home-hero-font-size-c: 1.5rem;
+  --home-hero-font-size-d: 1.5rem;
+}
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.lobby-bg {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.username {
+  color: var(--primary-color) !important;
+  cursor: pointer !important;
+  position: relative !important;
+}
+
+.username.copied::before {
+  width: max-content !important;
+  content: "Copied to clipboard" !important;
+  background: rgba(var(--color-dark-background), 1) !important;
+  box-shadow: var(--lift-shadow) !important;
+  padding: var(--spacing-unit-xmicro) !important;
+  border-radius: var(--spacing-unit-micro) !important;
+  font-size: 0.8rem !important;
+  position: absolute !important;
+  top: -20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.username.copied::after {
+  content: "" !important;
+  background: rgba(var(--color-dark-background), 1) !important;
+  padding: var(--spacing-unit-xmicro) !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  transform: rotate(45deg) !important;
+}
+
+.highlight {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 60%,
+    var(--secondary-color-active) 40%
+  );
+}
+
+.callboxMain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: display 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: callAnimation 2s infinite ease-in-out;
+}
+@keyframes callAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.callContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.userVideoContainer {
+  max-width: 15rem;
+  max-height: 15rem;
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: var(--spacing-unit-micro);
+  left: var(--spacing-unit-micro);
+  z-index: 99;
+}
+
+.userVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: var(--lift-shadow);
+}
+
+.partnerVideoContainer {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.partnerVideo {
+  width: 100%;
+  height: 100%;
+}
+
+.partnerVideo.cover {
+  object-fit: cover;
+}
+
+.controlsContainer {
+  position: absolute !important;
+  bottom: 0 !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  height: 4rem !important;
+  z-index: 999 !important;
+  width: 100vw !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.iconContainer {
+  padding: 10px !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  cursor: pointer !important;
+}
+
+.iconContainer:hover {
+  background-color: rgba(var(--color-background), 0.2);
+}
+
+.iconContainer img {
+  width: 50% !important;
+  height: auto !important;
+}
+@media screen and (min-width: 20rem) {
+  :root {
+    --home-hero-font-size-a: 3.6931719654rem;
+    --home-hero-font-size-b: 3.395216879rem;
+    --home-hero-font-size-c: 2rem;
+    --home-hero-font-size-d: 1.5rem;
+  }
+  .u-margin-bottom-xxlarge {
+    margin-bottom: calc(var(--spacing-unit-xxxxlarge) * 1.25);
+  }
+  .u-margin-top-xxlarge {
+    margin-top: calc(var(--spacing-unit-xxxxlarge) * 1.25);
+  }
+}
+@media screen and (min-width: 60rem) {
+  :root {
+    --home-hero-font-size-b: 4.55209399rem;
+    --home-hero-font-size-a: 5.0377201155rem;
+    --home-hero-font-size-c: 3rem;
+    --home-hero-font-size-d: 2rem;
+  }
+  .u-margin-bottom-xxlarge {
+    margin-bottom: var(--spacing-unit-xxxxlarge);
+  }
+  .u-margin-top-xxlarge {
+    margin-top: var(--spacing-unit-xxxxlarge);
+  }
+  .form-input {
+    font-size: 1.21875rem;
+  }
+  .primaryButton {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 60rem) and (min-width: 20rem) {
+  .form-input {
+    font-size: calc(1.1375rem + 0.08125 * (100vw - 20rem) / 40);
+  }
+}
